@@ -1,0 +1,17 @@
+{
+  "name": "radbit",
+  "version": "1.0.0",
+  "description": "Patient Image Portability",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "radiology"
+  ],
+  "author": "Eric Park",
+  "license": "ISC",
+  "dependencies": {
+    "adaptive-gradient": "^1.0.6"
+  }
+}

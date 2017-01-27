@@ -1,0 +1,33 @@
+/*
+3D39B2 Purple
+F71969 Pink
+*/
+html, body{height:100%; margin:0;padding:0; padding-top: 35px; }
+.navbar {min-height:60px !important}
+
+.gradient{
+  background-image:
+    linear-gradient(
+      to top, 
+      #FFFFFF, #ABABAB
+    );
+    width:100%; 
+    height:100%; 
+}
+
+.highlighted{
+    color: #F71969;
+}
+
+.highlightName{
+    color: #3d39B2;
+}
+
+.fade
+{
+        opacity:0.5;
+}
+.fade:hover
+{
+        opacity:1;
+}

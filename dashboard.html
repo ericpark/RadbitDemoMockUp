@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8"> 
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+	    <link rel="stylesheet" type="text/css" href="css/stylesdash.css">
+	    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	    <link href="css/simple-sidebar.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrp-formhelpers.css">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap-formhelpers.min.css">
+	    <link rel="stylesheet" href="css/jquery.ioslist.css" />
+
+
+
+	</head>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<div class="gradient">
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  	<div class="container">
+		  	<div class="row-fluid">
+				<div class="centering text-center">
+					<!--<a href="#menu-toggle" id="menu-toggle">=</a>-->
+
+					<p></p>
+					<b><p>NPI: 13451353093</p></b>
+				</div>
+			</div>
+		  	</div>
+		</nav>
+		<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="#"><span class="highlighted"><b>Home</b></span></a>
+                </li>
+                <li>
+                    <a href="#">Calendar</a>
+                </li>
+                <li>
+                    <a href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                       <div class="container">
+							<div class="row-fluid">
+           					<div id="custom-search-input">
+           					<input type=button class="btn btn-custom" data-toggle="modal" data-target="#myModal" value=' Add New Patient ' style="background-color:#3D39B2;
+										position: absolute; right: 120px; 
+              							border: solid 1px #3D39B2;
+              							height: 40px; 
+              							font-size:26px; 
+              							color:#FFFFFF" 
+        onfocus="if(this.value == ' Add New Patient ') {
+                    this.style.color='#FFFFFF';
+                 }" />
+                            <div class="input-group col-md-12">
+                                <input type="text" class="  search-query form-control" placeholder="Search" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+
+                            </div>
+                        </div>
+						</div>
+					</div>
+                        
+ 
+<!-- somewhere in the body tag -->
+<div id="list1">
+    <div class="ioslist-group-container">
+        <div class="ioslist-group-header">A</div>
+        <ul id="magic">
+                    <a href='dashboardpatient.html' class="fade"><li>Adams, John</li></a><br>
+
+            <a href=""><li>Aldren, Lily</li></a>
+            <br>
+            <a href=""><li>Axe, King</li></a>
+
+        </ul>
+    </div>
+    <div class="ioslist-group-container">
+        <div class="ioslist-group-header">D</div>
+        <ul>
+            <a href=""><li>Dang, Daniel</li></a>
+            <br>
+            <a href=""><li>Do, Liz</li></a>
+            <br>
+          
+        </ul>
+    </div>
+    <div class="ioslist-group-container">
+        <div class="ioslist-group-header">P</div>
+        <ul>
+            <a href=""><li>Park, Dan</li></a>
+            <br>
+            <a href=""><li>Paulsen, Sarah</li></a>
+            <br>
+            <a href=""><li>Phu, Jackie</li></a>
+            <br>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Connect with a Patient!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Enter the patients Phone number!</p>
+        <input type="text" class="input-medium bfh-phone" data-format="+1 (ddd) ddd-dddd">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" class="btn btn-default">Send!</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function magic() {
+	alert("I am an alert box!");
+	$('#modalclose').modal('hide');
+    $("#magic").append("<a href='dashboardpatient.html'><li>Adams, John</li></a><br>";
+}
+</script>
+
+<!-- near closing body tag -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ioslist.js"></script>
+<script src="js/bootstrap-formhelpers.js"></script>
+<script src="js/bootstrap-formhelpers.min.js"></script>
+<script>
+        $(function(){
+            $("#list1").ioslist();
+        });
+</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+	    </div>
+	    <!-- /#wrapper -->
+
+	        <!-- jQuery -->
+	    <script src="js/jquery.js"></script>
+
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="js/bootstrap.min.js"></script>
+
+	    <!-- Menu Toggle Script -->
+	    <script>
+	    $("#menu-toggle").click(function(e) {
+	        e.preventDefault();
+	        $("#wrapper").toggleClass("toggled");
+	    });
+	    </script>
+	</body>
+
+	</div>
+</html>
